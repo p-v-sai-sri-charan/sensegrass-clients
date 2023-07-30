@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://sensegrass-server-u89p.vercel.app",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",
@@ -48,5 +49,4 @@
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   },
-  "proxy": "https://sensegrass-server-u89p.vercel.app",
 }
