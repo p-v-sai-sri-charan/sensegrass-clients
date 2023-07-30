@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://ec2-16-171-64-144.eu-north-1.compute.amazonaws.com:5000",
+  "proxy": "https://ec2-16-171-64-144.eu-north-1.compute.amazonaws.com:5000",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",
