@@ -4,7 +4,7 @@ import axios from 'axios';
 import Cookie from 'js-cookie';
 
 const axiosInstance = axios.create({
-    baseURL: 'https://sensegrass-serve.vercel.app',
+    baseURL: 'https://sensegrass-server-u89p.vercel.app',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json',
