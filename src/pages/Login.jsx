@@ -16,6 +16,7 @@ function Login() {
     const toast = useRef(null);
     const [hasError, setHasError] = useState(false);
     const [enterOtp, setEnterOtp] = useState(false);
+    const [resOtp, setResOtp] = useState("");
     const navigate = useNavigate();
   
     const dispatch = useDispatch();
@@ -85,6 +86,7 @@ function Login() {
         })
         .then((response) => {
           toast.current.show({severity:'success', summary: 'OTP sent', detail:'OTP sent to your mobile number', life: 3000});
+          setResOtp(response.data.otp);
           setEnterOtp(true);
         })
         .catch((error) => {
@@ -141,7 +143,7 @@ function Login() {
                 <>
                   <div className="flex flex-col pt-4 justify-center items-center">
                     <div>
-                      <p className="text-2xl text-center pb-4">Enter OTP</p>
+                      <p className="text-2xl text-center pb-4">Enter OTP as {resOtp}</p>
                     </div>
                     <div className="space-x-4">
                       {Array.from({ length: 4 }, (_, index) => (
